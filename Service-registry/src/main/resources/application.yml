@@ -1,0 +1,10 @@
+eureka:
+  instance:
+    hostname: localhost
+
+  #isko khud ko register mat hone do
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+server:
+  port: 8761
