@@ -7,14 +7,15 @@ import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+
 public class Rating {
-    @Id
+
     private String ratingId;
 
     private String userId;
@@ -24,5 +25,8 @@ public class Rating {
     private int rating;
 
     private String feedback;
+
+
+    private Hotel hotel;
 
 }
